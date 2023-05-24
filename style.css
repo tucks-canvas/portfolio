@@ -1068,6 +1068,37 @@ img{
 
     }
 
+    .resume__heading{
+
+        font-size: 30px;
+
+    }
+
+    .resume__subtitle{
+
+        font-size: 25px;
+        padding-bottom: -5.5rem;
+
+    }
+
+    .resume__title{
+
+        font-size: 20px;
+
+    }
+
+    .resume__date{
+
+        font-size: 20px;
+
+    }
+
+    .resume__description{
+
+        font-size: 20px;
+
+    }
+
     .resume__icon{
 
         line-height: 1.4em;
@@ -1249,6 +1280,17 @@ img{
 @media only screen and (max-device-width: 768px)
 {
 
+    /*Reusable: Body*/
+
+    .section__title::before{
+
+        content: attr(data-title);
+        text-align: center;
+        font-size: 20px;
+        padding-bottom: 1rem;
+
+    }
+
     /* Header: Body */
     .container{
 
@@ -1304,7 +1346,8 @@ img{
 
     }
 
-   /* Home: Body */
+    
+    /* Home: Body */
 
     .home__img{
 
@@ -1312,17 +1355,88 @@ img{
 
     }
 
-    .services__container{
+    /* Qualifications: Body */
 
-        grid-template-columns: repeat(1, 1fr);
+    .resume__container{
 
-    }   
+        max-width: 750px;
+        max-height: 6000px;
+
+    }
+
+    .resume__title{
+
+        font-size: 25px;
+
+    } 
+    
+    .resume__date{
+
+        font-size: 25px;
+
+    }    
+
+    .resume__heading{
+
+        font-size: 50px;
+
+    }
+
+    .resume__subtitle{
+
+        font-size: 35px;
+        text-align: center;
+
+    }
 
     .resume__icon{
 
         display: none;
 
     }
+
+    .resume__description{
+
+        font-size: 28px;
+
+    }
+
+    /* My Work: Body */
+
+    .skills__container{
+
+        max-width: 800px;
+        max-height: 6000px;
+
+    }
+
+    .skills__name{
+
+        font-size: 23px;
+
+    } 
+    
+    .skills__no{
+
+        font-size: 23px;
+
+    }
+
+    .skills__description{
+
+        font-size: 25px;        
+
+    }
+
+
+    /* Services: Body */
+
+    .services__container{
+
+        grid-template-columns: repeat(1, 1fr);
+
+    }   
+
 
 }
 
@@ -1530,8 +1644,8 @@ img{
     
     .home__img{
 
-        height: 350px;
-        width: 350px;
+        height: 500px;
+        width: 500px;
 
     }
 
