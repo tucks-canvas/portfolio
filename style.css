@@ -1036,6 +1036,34 @@ img{
 }
 
 
+@media only screen and (max-device-width: 1440px)
+{
+
+  #resume__uwi{
+
+     padding-bottom: 34.8px;
+
+  }        
+
+  #skills__python{
+
+     padding-bottom: 65px;
+
+  } 
+
+  #skills__java{
+
+     padding-bottom: 65px;
+
+  } 
+
+  #skills__c{
+
+     padding-bottom: 65px;
+
+  } 
+
+}  
 
 
 @media only screen and (max-device-width: 1200px)
