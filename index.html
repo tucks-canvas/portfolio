@@ -6,7 +6,7 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv = "X-UA-Compatible" content= "IE=edge">
-        <meta name = "viewpoint" content = "with=device-width, initial-scale=1.0">
+        <meta name = "viewpoint" content = "width=device-width, initial-scale=1.0">
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="theme-color" content="#ffffff">
 
@@ -14,7 +14,8 @@
 
         <link rel = "stylesheet" href = "style.css">
         <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-        <link rel="icon" type="image/png" sizes="16x16"  href="favicons/favicon-16x16.png">    
+        <link rel = "stylesheet" href = "https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+        <link rel = "icon" type = "image/png" sizes = "16x16"  href = "favicons/favicon-16x16.png">    
     
         <script src="index.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -30,38 +31,54 @@
         <!--- Header --->
         <section class="header" id = "header">
             <nav class = "nav container">
-                <a href = "index.html" class = "nav__logo"> John </a>
+                <a href = "#" class = "nav__logo"> John </a>
 
-                <ul id="sidemenu" class = "nav__list">
-                    <li class = "nav__item">
-                        <a href = "#home" class = "nav__link active-link"> Home </a>
-                    </li>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class = "nav__list">
+                        <li class = "nav__item active-link">
+                            <a href = "#home" class = "nav__link"> 
+                                <i class="uil uil-estate nav__icon"></i> Home 
+                            </a>
+                        </li>
 
-                    <li class = "nav__item">
-                        <a href = "#about" class = "nav__link"> About </a>
-                    </li>
+                        <li class = "nav__item">
+                            <a href = "#about" class = "nav__link"> 
+                                <i class="uil uil-user nav__icon"></i> About 
+                            </a>
+                        </li>
 
-                    <li class = "nav__item">
-                        <a href = "#qualification" class = "nav__link"> Experiences </a>
-                    </li>
+                        <li class = "nav__item">
+                            <a href = "#qualification" class = "nav__link"> 
+                                <i class="uil uil-setting nav__icon"></i> Experiences 
+                            </a>
+                        </li>
 
+                        <li class = "nav__item">
+                            <a href = "#services" class = "nav__link"> 
+                                <i class="uil uil-briefcase nav__icon"></i> Services 
+                            </a>
+                        </li>
 
-                    <li class = "nav__item">
-                        <a href = "#services" class = "nav__link"> Services </a>
-                    </li>
+                        <li class = "nav__item">
+                            <a href = "#works" class = "nav__link"> 
+                                <i class="uil uil-scenery nav__icon"></i> Portfolio 
+                            </a>
+                        </li>
 
-
-                    <li class = "nav__item">
-                        <a href = "#works" class = "nav__link"> Portfolio </a>
-                    </li>
-
-
-                    <li class = "nav__item">
-                        <a href = "#contact" class = "nav__link"> Contact </a>
-                    </li>
-                    <i class="fas fa-times" onclick="closemenu()"></i>
-                </ul>        
-                <i class="fas fa-bars" onclick="openmenu()"></i>
+                        <li class = "nav__item">
+                            <a href = "#contact" class = "nav__link"> 
+                                <i class="uil uil-message nav__icon"></i> Contact 
+                            </a>
+                        </li>
+                    </ul> 
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>       
+                
+                <div class="nav__btns">
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>            
+                </div>
             </nav>
         </section>
 
@@ -143,21 +160,18 @@
                             <a href="Resume - Josiah-John Green.pdf" download class="btn"> Download Cv </a>
 
                             <div class="about__social-links">
-                                    <a href="https://www.hackerrank.com/josiahjohngreen" class = "about__social-link" target ="_blank">
-                                        <i class="fa-brands fa-hackerrank"></i>
-                                    </a>
                                     
-                                    <a href="https://www.instagram.com/josiah_jonh_" class = "about__social-link" target ="_blank">
-                                        <i class="fa-brands fa-instagram"></i>
-                                    </a>
-
-                                    <a href="https://www.linkedin.com/in/josiah-john-green/" class = "about__social-link" target ="_blank">
-                                        <i class="fa-brands fa-linkedin"></i>
-                                    </a>
-
-                                    <a href="https://github.com/josiah-john-green" class = "about__social-link" target ="_blank">
-                                        <i class="fa-brands fa-github"></i>
-                                    </a>
+                                <a href="https://www.instagram.com/josiah_jonh_" class = "about__social-link btn--transparent" target ="_blank">
+                                    <i class="uil uil-instagram"></i>
+                                </a>
+        
+                                <a href="https://www.linkedin.com/in/josiah-john-green/" class = "about__social-link btn--transparent" target ="_blank">
+                                    <i class="uil uil-linkedin"></i>
+                                </a>
+        
+                                <a href="https://github.com/josiah-john-green" class = "about__social-link btn--transparent" target ="_blank">
+                                    <i class="uil uil-github"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -166,140 +180,69 @@
 
             <!--- Qualifications --->
             <section class ="qualification section" id = "qualification">
-                <h2 class="section__title title-center" data-title="My Journey">Qualification</h2>
+                <h2 class="section__title title-center" data-title="My Journey"> Qualifications </h2>
 
-                <div class="resume__container container grid">
+                <div class = "qualification__container container grid">
+                    <div class="work">
+                        <h3 class="qualification__title">
+                            <i class="uil uil-suitcase qualification__icon"></i> Work
+                        </h3>
 
-                    <div class="resume__group">
-                        <h3 class="resume__heading">Education</h3>
+                        <div class="timeline">
+                            <div class="timeline__item">
 
-                        <div class="resume__items">
-                            <div class="resume__item">
-                                <div class="resume__header">
-                                        <h3 class="resume__subtitle">Teritary Education</h3>
-                                        <span class="resume__icon">+</span>
-                                </div> 
+                                <div class="circle__dot"></div>
+                                <h3 class="timeline__title"> Public Relations Officer </h3>
+                                <p class="timeline__text"> U.W.I. J.C. </p>
 
-                                <div class="resume__content">
-                                        <div class="resume__date-title">
-                                            <h3 class="resume__title"> The U.W.I </h3>
-                                            <span class="resume__date"> 2021 - PRESENT </span>
-                                        </div>
-
-                                        <p class="resume__description">I have just started my journey at the University of the West Indies", 
-                                            so this chapter of my life has not yet been written. But I do know what I hope to accomplish and that 
-                                            is a Computing Degree in Software Engineering, in my pursuit to become a Full Stack Engineer.
-                                        </p>
-                                </div>
+                                <span class="timeline__date"><i class="uil uil-calender"></i>
+                                    2022 - PRESENT
+                                </span>
                             </div>
 
-                            <div class="resume__item">
-                                <div class="resume__header">
-                                    <h3 class="resume__subtitle"> Secondary Education </h3>
-                                    <span class="resume__icon">-</span>
-                                </div> 
-        
-                                <div class="resume__content">
-                                    <div class="resume__date-title">
-                                        <h3 class="resume__title"> St. George's College </h3>
-                                        <span class="resume__date"> 2014 - 2021 </span>
-                                    </div>
-        
-                                    <p class="resume__description">Transitioning from "primary" to "secondary", I took the opportunity to capitalize
-                                        on building my academic prowess while adapting to yet another new environment. Along the way, I met and garnered people, 
-                                        friends, associates, and allies that help me along this journey, encouraging me to reach higher and push further than what 
-                                        I thought possible.   
-                                    </p>
-                                </div>
+                            <div class="timeline__item">
+
+                                <div class="circle__dot"></div>
+                                <h3 class="timeline__title"> Computing Course Representative  </h3>
+                                <p class="timeline__text"> U.W.I. </p>
+
+                                <span class="timeline__date"><i class="uil uil-calender"></i>
+                                    2022 - 2022
+                                </span>
                             </div>
-        
-                            <div class="resume__item">
-                                <div class="resume__header">
-                                    <h3 class="resume__subtitle">Primary Education</h3>
-                                    <span class="resume__icon">+</span>
-                                </div> 
-        
-                                <div class="resume__content">
-                                    <div class="resume__date-title">
-                                        <h3 class="resume__title">Ardenne Preparatory</h3>
-                                        <span class="resume__date"> 2009 - 2014 </span>
-                                    </div>
-        
-                                    <p class="resume__description">The building ground for my current stance at one of the most 
-                                        prestigious universities in the Caribbean. Ardenne, helped me to cultivate, social, academic 
-                                        and crucial inter- and intra-personal skills, that moulded me into the person I am today.                                                             
-                                    </p>
-                                </div>
+
+                            <div class="timeline__item">
+
+                                <div class="circle__dot"></div>
+                                <h3 class="timeline__title"> Oxford Coding Competition Finalist  </h3>
+                                <p class="timeline__text"> Halls of Learning </p>
+
+                                <span class="timeline__date"><i class="uil uil-calender"></i>
+                                    2021 - 2021
+                                </span>
                             </div>
                         </div>
-                    </div>       
-                    
-                    <div class="resume__group">
-                        <h3 class="resume__heading">Experiences</h3>
+                    </div>
 
-                        <div class="resume__items">
-                            <div class="resume__item">
-                            <div class="resume__header">
-                                    <h3 class="resume__subtitle"> Public Relations Officer </h3>
-                                    <span class="resume__icon">+</span>
-                            </div> 
+                    <div class="education">
+                        <h3 class="qualification__title">
+                            <i class="uil uil-graduation-cap qualification__icon"></i>Education
+                        </h3>
 
-                            <div class="resume__content">
-                                    <div class="resume__date-title">
-                                        <h3 class="resume__title"> U.W.I. Japanese Club</h3>
-                                        <span class="resume__date"> 2022 - PRESENT </span>
-                                    </div>
+                        <div class="timeline">
+                            <div class="timeline__item">
 
-                                    <p class="resume__description"> Operated as the Public Relations Officer for the 
-                                        UWI Japanese Club. Dedicated I am/was committed to enhancing our club's image, 
-                                        fostering positive relationships, and effectively communicating our activities to the wider community through
-                                        social media platforms such as Instagram.
-                                    </p>
-                            </div>
-                            </div>
+                                <div class="circle__dot"></div>
+                                <h3 class="timeline__title"> University of the West Indies </h3>
+                                <p class="timeline__text"> Major in Software Engineering </p>
 
-                            <div class="resume__item">
-                                <div class="resume__header">
-                                    <h3 class="resume__subtitle"> Computing Course Representative </h3>
-                                    <span class="resume__icon">-</span>
-                                </div> 
-        
-                                <div class="resume__content">
-                                    <div class="resume__date-title">
-                                        <h3 class="resume__title"> The U.W.I </h3>
-                                        <span class="resume__date"> 2022 - 2022 </span>
-                                    </div>
-        
-                                    <p class="resume__description" id="resume__uwi"> Operated as the Class Representative for COMP1161 or Introduction
-                                        to Object-Programming. Serving as intermediary between teacher and students, I collaborated with fellow 
-                                        students to identify issues within the class, and helping in the communication and resolution 
-                                        of any such issues to lecturer/teacher. 
-                                    </p>
-                                </div>
-                            </div>
-        
-                            <div class="resume__item">
-                                <div class="resume__header">
-                                    <h3 class="resume__subtitle"> Oxford Coding Competition Finalist </h3>
-                                    <span class="resume__icon">+</span>
-                                </div> 
-        
-                                <div class="resume__content">
-                                    <div class="resume__date-title">
-                                        <h3 class="resume__title"> Halls of Learning </h3>
-                                        <span class="resume__date"> 2021 - 2021 </span>
-                                    </div>
-        
-                                    <p class="resume__description"> Representing St. George's College in the Elite Category of the 
-                                        Oxford Coding Challenge, my team and I, invoking our problem-solving skills tackled 
-                                        coding problems given and matriculated through rounds, becoming finalists.
-                                    </p>
-                                </div>
+                                <span class="timeline__date"><i class="uil uil-calender"></i>
+                                    2021 - PRESENT
+                                </span>
                             </div>
                         </div>
-                    </div>    
-
-                </div>                
+                    </div>
+                </div>  
             </section>
 
             <!--- Services --->
@@ -309,7 +252,7 @@
                 <div class="services__container container grid">
 
                     <div class="services__item">
-                        <i class="fa-solid fa-feather-pointed services__icon"></i>
+                        <i class="uil uil-airplay  services__icon"></i>
                         
                         <h3 class="services__title"> UI/UX Design </h3>
                         <p class="services__description"> Designing user-centric interfaces that engage and delight. 
@@ -319,7 +262,7 @@
                     </div>
 
                     <div class="services__item">
-                        <i class="fa-solid fa-gear services__icon"></i>
+                        <i class="uil uil-setting services__icon"></i>
                         
                         <h3 class="services__title"> Web Development </h3>
                         <p class="services__description"> Transforming your ideas into functional and dynamic web applications.
@@ -329,7 +272,7 @@
                     </div>
 
                     <div class="services__item">
-                        <i class="fa-solid fa-brush services__icon"></i>
+                        <i class="uil uil-brush-alt services__icon"></i>
                         
                         <h3 class="services__title"> Graphic Design </h3>
                         <p class="services__description"> Creating stunning illustrations that convey your message with artistic flair.
@@ -344,111 +287,111 @@
             <!--- Skills --->
             <section class ="skills section" id = "skills">
                 <h2 class="section__title title-center" data-title="My Talents">Professional Skills</h2>
-        
+
                 <div class="skills__container container grid">
+                    <div class="skills__tabs">
+                        <div class="skills__header skills__active" data-target="#frontend">
+                            <i class="uil uil-brackets-curly skills__icon"></i>
 
-                    <div class="skills__item" >
-                        <div class="skills__titles">
-                            <h3 class="skills__name">Python</h3>
-                            <span class="skills__no">75 %</span>
-                        </div>
-
-                        <p class="skills__description" id="skills__python">Extensive experience in Python programming, 
-                            utilizing its versatility to develop robust applications and automate tasks.       
-                        </p>
-
-                        <div class="skills__bar">
-                            <div class="skills__percentage" style="width: 75%">
-                                <span></span>
+                            <div>
+                                <h1 class="skills__title">Front-End Developer</h1>
+                                <span class="skills__subtitle"> More than 1 year </span>
                             </div>
-                        </div>
-                    </div>  
-                    
-                    <div class="skills__item">
-                        <div class="skills__titles">
-                            <h3 class="skills__name">Java</h3>
-                            <span class="skills__no">80 %</span>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
                         </div>
 
-                        <p class="skills__description" id="skills__java">Proficient in Java programming, applying object-oriented 
-                            principles to develop scalable and maintainable software solutions.                
-                        </p>
+                        <div class="skills__header" data-target="#design">
+                            <i class="uil uil-swatchbook skills__icon"></i>
 
-                        <div class="skills__bar">
-                            <div class="skills__percentage" style="width: 80%">
-                                <span></span>
+                            <div>
+                                <h1 class="skills__title"> UI/UX Design </h1>
+                                <span class="skills__subtitle"> More than 2 years </span>
                             </div>
-                        </div>
-                    </div> 
-
-                    <div class="skills__item">
-                        <div class="skills__titles">
-                            <h3 class="skills__name">HTML</h3>
-                            <span class="skills__no">85 %</span>
+                            
+                            <i class="uil uil-angle-down skills__arrow"></i>
                         </div>
 
-                        <p class="skills__description">Strong grasp of HTML5 and its latest features, 
-                            incorporating multimedia elements and semantic structure to enhance user experiences.
-                        </p>
+                        <div class="skills__header" data-target="#backend">
+                            <i class="uil uil-server-network skills__icon"></i>
 
-                        <div class="skills__bar">
-                            <div class="skills__percentage" style="width: 85%">
-                                <span></span>
+                            <div>
+                                <h1 class="skills__title">Back-End Developer </h1>
+                                <span class="skills__subtitle"> More than 2 years</span>
                             </div>
+
+                            <i class="uil uil-angle-down skills__arrow"></i>
                         </div>
-                    </div> 
+                    </div>
 
-                    <div class="skills__item">
-                        <div class="skills__titles">
-                            <h3 class="skills__name">CSS</h3>
-                            <span class="skills__no">85 %</span>
+                    <div class="skills__content">
+                        <div class="skills__group skills__active" data-content id="frontend">
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage" style="width: 80%"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">CSS</h3>
+                                        <span class="skills__number">80%</span>
+                                    </div>
+
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage" style="width: 80%"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">JavaScript</h3>
+                                        <span class="skills__number">50%</span>
+                                    </div>
+
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage" style="width: 50%"></span>
+                                    </div>
+                                </div>                                
+                            </div> 
                         </div>
 
-                        <p class="skills__description">In-depth understanding of CSS frameworks like Bootstrap, 
-                            ensuring consistent and visually appealing designs across various platforms.   
-                        </p>
-
-                        <div class="skills__bar">
-                            <div class="skills__percentage" style="width: 85%">
-                                <span></span>
-                            </div>
-                        </div>
-                    </div> 
-
-                    <div class="skills__item" >
-                        <div class="skills__titles">
-                            <h3 class="skills__name">C</h3>
-                            <span class="skills__no">90 %</span>
+                        <div class="skills__group" data-content id="design">
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Canva</h3>
+                                        <span class="skills__number">90%</span>
+                                    </div>
+                                    
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage" style="width: 90%"></span>
+                                    </div>
+                                </div>
+                            </div> 
                         </div>
 
-                        <p class="skills__description" id="skills__c">Proficient in C programming, 
-                            employing algorithmic thinking to solve complex problems and optimize code efficiency.   
-                        </p>
+                        <div class="skills__group" data-content id="backend">
+                            <div class="skills__list grid">
+                                <div class="skills__data">
+                                    <div class="skills__titles">
+                                        <h3 class="skills__name">Python</h3>
+                                        <span class="skills__number">70%</span>
+                                    </div>
 
-                        <div class="skills__bar">
-                            <div class="skills__percentage" style="width: 90%">
-                                <span></span>
-                            </div>
+                                    <div class="skills__bar">
+                                        <span class="skills__percentage" style="width: 70%"></span>
+                                    </div>
+                                </div>                                
+                            </div> 
                         </div>
-                    </div> 
-
-                    <div class="skills__item">
-                        <div class="skills__titles">
-                            <h3 class="skills__name">Canva </h3>
-                            <span class="skills__no">90 %</span>
-                        </div>
-
-                        <p class="skills__description">Proficient in leveraging Canva's powerful design 
-                            tools to create visually stunning graphics, presentations, and marketing materials.
-                        </p>
-
-                        <div class="skills__bar">
-                            <div class="skills__percentage" style="width: 90%">
-                                <span></span>
-                            </div>
-                        </div>
-                    </div> 
-
+                    </div>
                 </div>
             </section>
 
@@ -632,20 +575,17 @@
                     <p class="footer__copyright">2023 &copy; Josiah-John Green. All Right Reserved</p> 
 
                     <div class="footer__social-links">
-                        <a href="https://www.hackerrank.com/josiahjohngreen" class = "footer__social-link btn--transparent" target ="_blank">
-                            <i class="fa-brands fa-hackerrank"></i>
-                        </a>
                         
                         <a href="https://www.instagram.com/josiah_jonh_" class = "footer__social-link btn--transparent" target ="_blank">
-                            <i class="fa-brands fa-instagram"></i>
+                            <i class="uil uil-instagram"></i>
                         </a>
 
                         <a href="https://www.linkedin.com/in/josiah-john-green/" class = "footer__social-link btn--transparent" target ="_blank">
-                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="uil uil-linkedin"></i>
                         </a>
 
                         <a href="https://github.com/josiah-john-green" class = "footer__social-link btn--transparent" target ="_blank">
-                            <i class="fa-brands fa-github"></i>
+                            <i class="uil uil-github"></i>
                         </a>
                     </div>
                 </div>
