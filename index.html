@@ -4,6 +4,7 @@
     <!--- Header --->
 
     <head>
+
         <meta charset="UTF-8">
         <meta http-equiv = "X-UA-Compatible" content= "IE=edge">
         <meta name = "viewpoint" content = "width=device-width, initial-scale=1.0">
@@ -17,13 +18,7 @@
         <link rel = "stylesheet" href = "https://unicons.iconscout.com/release/v4.0.8/css/line.css">
         <link rel = "icon" type = "image/png" sizes = "16x16"  href = "favicons/favicon-16x16.png">    
     
-        <script src="index.js"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-        <script type="text/javascript">(function(){emailjs.init("mhN9uka1-ow__7W96");})();</script>
-    
     </head>
-
-
 
     <!--- Body --->
     <body>
@@ -524,7 +519,7 @@
                         </div>
                     </div>
 
-                    <form action="" class="contact__form">
+                    <form class="contact__form">
 
                         <div class="form__group">
                             <div class="form__input">
@@ -562,8 +557,8 @@
                             class="input__control textarea"></textarea>
                         </div>
 
-                        <button class="btn contact__btn" onclick="sendMail()">Send Message</button>
-
+                        <button class="btn contact__btn" id="sendbtn">Send Message</button>
+                   
                     </form>
                 </div>
             </section>
@@ -590,6 +585,10 @@
                     </div>
                 </div>
             </section>
+
+            <!--- Mail JS --->
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
+            <script src="mail.js"></script>
 
             <!--- Filter JS --->
             <script src="mixitup.min.js"></script>
