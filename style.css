@@ -905,6 +905,7 @@ img{
     transform: translateY(1.5rem);
     transition: all 0.3s ease-in-out;
     font-size: var(--h3-font-size);
+    text-align: center;
 
 }
 
